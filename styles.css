@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.top-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: #eaeaea;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.small-card {
+    text-align: center;
+}
+
+.small-card input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+}
+
+.logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaeaea;
+    border-radius: 12px;
+}
+
+.logo {
+    width: 90%;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.middle-row {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.chart-card h3,
+.expenses-card h3,
+.results-card h3,
+.partnership-card h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.expense-item input {
+    width: 120px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+.expense-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.results-card,
+.partnership-card {
+    margin-top: 20px;
+}
+
+.result-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 18px;
+}
+
+.partnership-card input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    margin-bottom: 10px;
+}

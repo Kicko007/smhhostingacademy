@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SMH Hosting Academy Deal Analyzer</title>
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Top Cards -->
+    <div class="top-row">
+
+        <div class="card small-card">
+            <label>Occupancy Rate (%)</label>
+            <input type="number" id="occRate" value="75" />
+        </div>
+
+        <div class="logo-card">
+            <img src="logo.png" class="logo" />
+        </div>
+
+        <div class="card small-card">
+            <label>Weekday ADR ($)</label>
+            <input type="number" id="adrWeekday" value="150" />
+        </div>
+
+        <div class="card small-card">
+            <label>Weekend ADR ($)</label>
+            <input type="number" id="adrWeekend" value="200" />
+        </div>
+
+    </div>
+
+    <!-- Middle Section -->
+    <div class="middle-row">
+
+        <div class="card chart-card">
+            <h3>Cumulative Monthly Income</h3>
+            <canvas id="incomeChart"></canvas>
+        </div>
+
+        <div class="card expenses-card">
+            <h3>Monthly Expenses</h3>
+
+            <div class="expense-item">
+                <label>Rent</label>
+                <input type="number" class="expense" id="rent" value="2000" />
+            </div>
+
+            <div class="expense-item">
+                <label>Cleaning Fees</label>
+                <input type="number" class="expense" id="cleaning" value="300" />
+            </div>
+
+            <div class="expense-item">
+                <label>Utilities</label>
+                <input type="number" class="expense" id="utilities" value="200" />
+            </div>
+
+            <div class="expense-item">
+                <label>Internet</label>
+                <input type="number" class="expense" id="internet" value="80" />
+            </div>
+
+            <div class="expense-item">
+                <label>Maintenance</label>
+                <input type="number" class="expense" id="maintenance" value="100" />
+            </div>
+
+            <div class="expense-item">
+                <label>Supplies</label>
+                <input type="number" class="expense" id="supplies" value="50" />
+            </div>
+
+            <div class="expense-item">
+                <label>Other</label>
+                <input type="number" class="expense" id="other" value="0" />
+            </div>
+
+            <hr />
+
+            <div class="expense-total">
+                <strong>Total Expenses:</strong>
+                <span id="totalExpenses">$0</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Net Profit Section -->
+    <div class="card results-card">
+        <h3>Net Cash Flow</h3>
+
+        <div class="result-line">
+            <label>Daily Profit</label>
+            <span id="dailyProfit">$0</span>
+        </div>
+
+        <div class="result-line">
+            <label>Monthly Profit</label>
+            <span id="monthlyProfit">$0</span>
+        </div>
+
+        <div class="result-line">
+            <label>Yearly Profit</label>
+            <span id="yearlyProfit">$0</span>
+        </div>
+    </div>
+
+    <!-- Partnership Card -->
+    <div class="card partnership-card">
+        <h3>Partnership Model</h3>
+
+        <label>Partner Percentage (%)</label>
+        <input type="number" id="partnerSplit" value="50" />
+
+        <div class="result-line">
+            <label>Your Share:</label>
+            <span id="yourShare">$0</span>
+        </div>
+
+        <div class="result-line">
+            <label>Partner Share:</label>
+            <span id="partnerShare">$0</span>
+        </div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
